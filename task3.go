@@ -42,6 +42,7 @@ func main() {
 	fmt.Printf("\nStudent RollNo	: %v\n",student.list[i].rollNumber);
 	fmt.Printf("Student Name	: %v\n",student.list[i].name);
 	fmt.Printf("Student Adress	: %v\n",student.list[i].address);
-
+	fmt.Printf("Student Adress	: %v\n",student.list[i].address);
+	
 	}
 }
