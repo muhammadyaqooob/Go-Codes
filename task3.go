@@ -36,15 +36,12 @@ func main() {
 	student.creatStudent(54, "Naveed", "BBBBBBBBB")
 	fmt.Println(student.list[0].name)
 
-	no:=1
+	for i := 0; i <len(student.list) ; i++ {
 
-	fmt.Printf("%s List %d %s \n", strings.Repeat("=",25),no,strings.Repeat("=",25))
-	fmt.Printf("\nStudent RollNo	: %v\n",student.list[0].rollNumber);
-	fmt.Printf("Student Name	: %v\n",student.list[0].name);
-	fmt.Printf("Student Adress	: %v\n",student.list[0].address);
-	no=no+1
-	fmt.Printf("%s List %d %s \n", strings.Repeat("=",25),no,strings.Repeat("=",25))
-	fmt.Printf("\nStudent RollNo	: %v\n",student.list[1].rollNumber);
-	fmt.Printf("Student Name	: %v\n",student.list[1].name);
-	fmt.Printf("Student Adress	: %v\n",student.list[1].address);
+	fmt.Printf("%s List %d %s \n", strings.Repeat("=",25),i,strings.Repeat("=",25))
+	fmt.Printf("\nStudent RollNo	: %v\n",student.list[i].rollNumber);
+	fmt.Printf("Student Name	: %v\n",student.list[i].name);
+	fmt.Printf("Student Adress	: %v\n",student.list[i].address);
+
+	}
 }
